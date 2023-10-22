@@ -105,6 +105,7 @@ const JoinEvent: React.FC = () => {
           console.log(`Transaction ID: ${txId}`);
           console.log("Event cost deducted successfully.");
           localStorage.setItem("transactionID", txId);
+          console.log("Transaction ID:", transactionId);
           setTransactionId(txId);
           window.location.href = "my-ticket.html";
         }
